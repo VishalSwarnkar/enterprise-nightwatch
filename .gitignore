@@ -1,0 +1,5 @@
+node_modules
+selenium-server.log
+reports
+*.png
+.DS_Store
