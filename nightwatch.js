@@ -36,7 +36,7 @@ module.exports = {
         "path": SCREENSHOT_PATH
       },
       "globals": {
-        "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
+        "waitForConditionTimeout": 7000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": {
         "browserName": "chrome",
