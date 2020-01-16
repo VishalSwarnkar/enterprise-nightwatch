@@ -1,6 +1,7 @@
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
 const SCREENSHOT_PATH = './reports/pages';
+const PAGE_PATH = 'src/pages';
 module.exports = {
   "src_folders": [
     "src/tests"
@@ -12,7 +13,7 @@ module.exports = {
   "output_folder": "reports",
   "custom_commands_path": "",
   "custom_assertions_path": "",
-  "page_objects_path": "",
+  "page_objects_path": PAGE_PATH,
   "globals_path": "",
   "selenium": {
     "start_process": true,
@@ -27,7 +28,7 @@ module.exports = {
   },
   "test_settings": {
     "default": {
-      // "launch_url": "https://enterprise.taskworld.com",
+      "launch_url": "https://enterprise.taskworld.com",
       // "selenium_port": 4444,
       // "selenium_host": "localhost",
       // "silent": true,
@@ -36,7 +37,7 @@ module.exports = {
         "path": SCREENSHOT_PATH
       },
       "globals": {
-        "waitForConditionTimeout": 7000 // sometimes internet is slow so wait.
+        "waitForConditionTimeout": 20000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": {
         "browserName": "chrome",
