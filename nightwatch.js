@@ -6,6 +6,7 @@ module.exports = {
   "src_folders": [
     "src/tests"
   ],
+  "exclude" : ['src/tests/home/testdata.js'],
   "test_workers": {
     "enabled": true,
     "workers": "auto"
@@ -34,7 +35,9 @@ module.exports = {
       // "silent": true,
       "screenshots": {
         "enabled": true,
-        "path": SCREENSHOT_PATH
+        "path": SCREENSHOT_PATH,
+        "on_failure": true,
+        "on_error": true
       },
       "globals": {
         "waitForConditionTimeout": 20000 // sometimes internet is slow so wait.

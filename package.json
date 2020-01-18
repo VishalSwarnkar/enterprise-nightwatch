@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/nightwatch/bin/nightwatch --config nightwatch.js"
+    "test": "node node_modules/nightwatch/bin/nightwatch --reporter ./src/helpers/html-reporter.js --config nightwatch.js"
   },
   "author": "vishal",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "chromedriver": "^79.0.0",
     "dotenv": "^8.2.0",
     "nightwatch": "^1.3.2",
+    "nightwatch-html-reporter": "^2.0.6",
     "selenium-server": "^3.141.59",
     "winston": "^3.2.1"
   }
